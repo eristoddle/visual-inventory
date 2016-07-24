@@ -13,7 +13,20 @@ So using Ionic2 and Electron you can build applications using Ionic2/Angular2 in
 
 It's a work in progress. So feel free to fork and do pull requests.
 
-Currently `gulp build` will build the web, android and ios apps and `gulp electron:all` will build the Windows, OSX, and Linux applications.
+# start ionic and electron with autoreload,
+ionic serve
+# open another terminal window for the npm run command!
+npm run-script electron
+
+# use electron in dist
+ionic build browser
+npm run-script electron dist
+
+# build web, android and ios apps
+gulp electron:all
+
+# build windows, linux and os applications
+gulp electron:all
 
 ##TODO
 
